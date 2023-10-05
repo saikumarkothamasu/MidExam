@@ -1,3 +1,4 @@
 # MidExam
 
-http://127.0.0.1:5500/new/index.html
+This is Mid Term Project 
+
