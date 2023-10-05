@@ -1,0 +1,283 @@
+
+body, h1, h2, p, ul, a {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color:lightgray;
+}
+
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+}
+
+
+.navigation {
+    background-color: #050505;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav_links li a {
+    font-weight: 800;
+    font-size: 16px;
+    color: #00f7ff;
+    text-decoration: none;
+}
+
+.nav_links li a:hover {
+    color: red;
+}
+
+
+.section {
+    padding: 20px;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section h1 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+.section .images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.section .image-container {
+    margin: 10px;
+    width: 350px;
+    height: 500px;
+    text-align: center;
+    color: rgb(0, 255, 55);
+    font-weight: bolder;
+}
+
+.section .image-container p {
+    font-size: 20px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #050505;
+    color: white;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 800px) {
+    
+    #container {
+        grid-auto-rows: auto;
+    }
+    .nav_links {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+    .nav_links li {
+        width: 100%;
+        margin: 10px;
+    }
+    
+}
+
+.papers1 {
+    width: calc(33.33% - 20px); 
+    height: 200px;
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 5px;
+    border: 2px solid black;
+    background-image: linear-gradient(rgb(150, 58, 209), rgb(96, 0, 176));
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    color: white; 
+    transition: transform 0.2s;
+}
+
+.papers2 p,.papers1 p{
+    color: white;
+}
+
+
+.papers2 {
+    width: calc(33.33% - 20px); 
+    height: 200px;
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 5px;
+    border: 2px solid black;
+    background-image: linear-gradient(rgb(36, 41, 50), rgb(61, 68, 83));
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    box-sizing: border-box; 
+    color: white; 
+    transition: transform 0.2s;
+}
+
+.papers1:hover,
+.papers2:hover {
+    transform: scale(1.1); 
+}
+
+.paper-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+a {
+    text-decoration: none;
+    color: #333; 
+}
+
+
+a:visited {
+    color: #663399; 
+}
+
+
+a:hover {
+    color: #ff5733; 
+    text-decoration: underline; 
+}
+
+
+.image-container {
+    margin: 0; 
+    padding: 0; 
+    width: auto; 
+    height: auto;
+    text-align: center;
+    color: red;
+    font-weight: bolder;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.image-container p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#image-container-1{
+    background-image: url("images/tounge.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#image-container-2{
+    background-image: url("images/teaching.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#image-container-3{
+    background-image: url("images/studying.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#image-container-4{
+    background-image: url("images/enstien.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+} 
+
+#about .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.about-image {
+    width: 40%; 
+    padding: 20px; 
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.about-text {
+    width: 55%; 
+    padding: 20px; 
+}
+
+
+
+#about h1 {
+    font-size: 24px; 
+    margin-bottom: 10px;
+}
+
+#about p {
+    font-size: 16px; 
+}
+@media screen and (max-width: 768px) {
+    #about .about-content {
+        flex-direction: column; 
+    }
+
+    .about-image,
+    .about-text {
+        width: 100%; 
+    }
+}
+
+#experience,#papers,#hobbies{
+    background-image: linear-gradient(to bottom right, #e8eb27, #fde2e4, #cccef0, #e2ece9, #cedfe2, #e6ee7c);
+}
+
+
+#blogs,#about{
+    background-image: linear-gradient(to bottom right, #27eb48, #fde2e4, #cccef0, #85c2b0, #cedfe2, #ec4545);
+}
